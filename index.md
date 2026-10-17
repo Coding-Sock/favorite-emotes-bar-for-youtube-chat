@@ -1,6 +1,6 @@
 # Favorite Emotes Bar for YouTube Chat
 
-Effective date: [DATE]
+Effective date: October 17th, 2026
 
 This page explains how the Favorite Emotes Bar for YouTube Chat browser add-on handles information and describes its terms of use.
 
