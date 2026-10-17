@@ -1,3 +1,5 @@
+# Favorite Emotes Bar for YouTube Chat Add-on
+
 # Privacy Policy
 
 Effective date: October 17th, 2026
