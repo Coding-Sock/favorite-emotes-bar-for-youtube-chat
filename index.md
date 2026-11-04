@@ -1,6 +1,6 @@
 # Favorite Emotes Bar for YouTube Chat
 
-Effective date: October 17th, 2026
+Effective date: November 4th, 2026
 
 This page explains how the Favorite Emotes Bar for YouTube Chat browser add-on handles information and describes its terms of use.
 
@@ -21,17 +21,30 @@ Channel-specific favorites are stored locally in your browser and are not automa
 
 ### Information processed on YouTube
 
-The add-on runs on YouTube live chat pages to display the favorites bar and interact with YouTube’s emote picker. It processes the relevant page elements in your browser to identify emotes you choose to add, validate emotes when the picker is opened, and insert a selected favorite into chat.
+The add-on runs on YouTube live chat pages, including YouTube live chats embedded on other websites, to display the favorites bar and interact with YouTube’s emote picker. It processes the relevant page elements in your browser to identify emotes you choose to add, validate emotes when the picker is opened, and insert a selected favorite into chat.
 
 The add-on does not send chat messages, browsing history, favorites, or analytics to the developer.
 
+### Emote images
+
+Custom emote images in the favorites bar are loaded directly from YouTube’s and Google’s image servers, the same servers YouTube’s own chat uses. The add-on never loads emote images from any other server. If a saved image address points somewhere else, for example in an imported backup file, that emote is shown as its text shortcut instead.
+
+### Check & Prune
+
+Check & Prune finds custom emotes a channel has removed, as well as duplicate or invalid favorites. It only runs when you start it from the add-on’s settings page. When it runs, the add-on:
+
+- Contacts YouTube to confirm your connection before checking anything
+- Loads each saved custom emote image from YouTube’s or Google’s image servers to see whether it still exists
+
+These requests are made directly from your browser, are sent without referrer information, and do not include your favorites or settings. Nothing is removed until you review the results and choose which items to remove.
+
 ### Backups
 
-When you choose **Export**, the add-on creates a JSON backup file containing your settings and favorites. You decide where to save, store, or transfer that file. The add-on does not upload the backup to the developer.
+When you choose Export, the add-on creates a JSON backup file containing your settings and favorites. You decide where to save, store, or transfer that file. The add-on does not upload the backup to the developer.
 
 ### Services operated by others
 
-Browser sync is provided by your browser provider, not by the developer of this add-on. GitHub Pages hosts this policy page; GitHub may process visitor information, such as IP addresses, for site operation and security, according to [GitHub’s Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+Browser sync is provided by your browser provider, not by the developer of this add-on. Emote images are served by YouTube and Google, according to [Google’s Privacy Policy](https://policies.google.com/privacy). GitHub Pages hosts this policy page; GitHub may process visitor information, such as IP addresses, for site operation and security, according to [GitHub’s Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 
 ### Managing your information
 
