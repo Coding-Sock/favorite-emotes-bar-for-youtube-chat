@@ -1,6 +1,6 @@
 # Favorite Emotes Bar for YouTube Chat
 
-Effective date: November 4th, 2026
+Effective date: November 18th, 2026
 
 This page explains how the Favorite Emotes Bar for YouTube Chat browser add-on handles information and describes its terms of use.
 
@@ -11,17 +11,20 @@ This page explains how the Favorite Emotes Bar for YouTube Chat browser add-on h
 The add-on stores favorites and preferences in your browser’s extension storage. This may include:
 
 - Global and channel-specific favorite emotes
+- For channels that have their own favorites list: the channel’s name and the date that list was last used, shown in the add-on’s settings page
 - Custom emote shortcuts and associated image URLs
 - The custom-emote allowlist
 - Display preferences, such as toolbar size and visibility settings
 
 Global favorites, the allowlist, and display preferences use browser sync storage when it is available. If browser sync is enabled, your browser provider may sync these settings across your devices, subject to that provider’s settings and privacy policy.
 
-Channel-specific favorites are stored locally in your browser and are not automatically synced between devices.
+Channel-specific favorites, and the channel names and last-used dates that go with them, are stored locally in your browser and are not automatically synced between devices. Channel names are only saved for channels you have created a list for, not for every chat you open, and are removed when you delete that list.
 
 ### Information processed on YouTube
 
 The add-on runs on YouTube live chat pages, including YouTube live chats embedded on other websites, to display the favorites bar and interact with YouTube’s emote picker. It processes the relevant page elements in your browser to identify emotes you choose to add, validate emotes when the picker is opened, and insert a selected favorite into chat.
+
+To use the right channel-specific favorites in pop-out chats and in YouTube chats embedded on other websites, which don’t show which channel they belong to, the add-on loads that stream’s YouTube video page from YouTube in the background and reads the channel’s ID (and, for channels with their own list, the channel’s name) from it. This is a normal request to YouTube, made with your existing YouTube session like any YouTube page; it doesn’t play the video, and no favorites or settings are sent with it.
 
 The add-on does not send chat messages, browsing history, favorites, or analytics to the developer.
 
